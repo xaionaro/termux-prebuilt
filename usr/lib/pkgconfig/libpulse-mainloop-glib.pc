@@ -1,0 +1,12 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=/data/data/com.termux/files/usr
+libdir=/data/data/com.termux/files/usr/lib
+includedir=/data/data/com.termux/files/usr/include
+
+Name: libpulse-mainloop-glib
+Description: PulseAudio GLib 2.0 Main Loop Wrapper
+Version: 17.0-dirty
+Libs: -L${libdir} -lpulse-mainloop-glib -pthread
+Libs.private: -L${libdir}/pulseaudio -lpulsecommon-17.0
+Cflags: -I${includedir} -D_REENTRANT
+Requires: libpulse glib-2.0

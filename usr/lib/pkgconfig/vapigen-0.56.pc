@@ -1,0 +1,15 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+bindir=${exec_prefix}/bin
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+includedir=${prefix}/include
+
+vapigen=${bindir}/vapigen-0.56
+vapidir=${datadir}/vala/vapi
+vapidir_versioned=${datadir}/vala-0.56/vapi
+
+Name: vapigen
+Description: Vala API Generator
+Version: 0.56.17

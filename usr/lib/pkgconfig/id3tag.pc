@@ -1,0 +1,10 @@
+prefix=/data/data/com.termux/files/usr
+includedir=${prefix}/include
+libdir=${prefix}//data/data/com.termux/files/usr/lib
+
+Name: libid3tag
+Description: ID3 tag manipulation library for MP3 files
+Version: 0.16.3
+URL: https://codeberg.org/tenacityteam/libid3tag
+Libs: -L${libdir} -lid3tag -lz
+Cflags: -I${includedir}

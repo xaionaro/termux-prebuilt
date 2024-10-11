@@ -1,0 +1,11 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name:             libmatroska
+Description:      Library for parsing EBML data structures
+Version:          1.7.1
+Requires.private: libebml
+Libs:             -L${libdir} -lmatroska
+Cflags:           -I${includedir}

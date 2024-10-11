@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/data/data/com.termux/files/usr/bin/gdk-pixbuf-thumbnailer
+Exec=/data/data/com.termux/files/usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+MimeType=image/svg+xml;image/svg+xml-compressed;

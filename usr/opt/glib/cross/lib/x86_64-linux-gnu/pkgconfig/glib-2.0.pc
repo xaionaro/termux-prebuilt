@@ -1,0 +1,18 @@
+prefix=/data/data/com.termux/files/usr
+bindir=${prefix}/bin
+datadir=${prefix}/share
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+glib_genmarshal=/data/data/com.termux/files/usr/opt/glib/cross/bin/glib-genmarshal
+gobject_query=/data/data/com.termux/files/usr/opt/glib/cross/bin/gobject-query
+glib_mkenums=/data/data/com.termux/files/usr/opt/glib/cross/bin/glib-mkenums
+glib_valgrind_suppressions=${datadir}/glib-2.0/valgrind/glib.supp
+
+Name: GLib
+Description: C Utility Library
+Version: 2.80.5
+Requires.private: libpcre2-8 >= 10.32
+Libs: -L${libdir} -lglib-2.0
+Libs.private: -lm -liconv -pthread
+Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include

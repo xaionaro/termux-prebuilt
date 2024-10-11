@@ -1,0 +1,11 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name: libudfread
+Description: UDF filesystem access library
+Version: 1.1.2
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -ludfread

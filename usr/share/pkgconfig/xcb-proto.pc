@@ -1,0 +1,11 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+xcbincludedir=${pc_sysrootdir}${datadir}/xcb
+PYTHON_PREFIX=${prefix}
+pythondir=${pc_sysrootdir}/data/data/com.termux/files/usr/lib/python3.12/site-packages
+
+Name: XCB Proto
+Description: X protocol descriptions for XCB
+Version: 1.17.0

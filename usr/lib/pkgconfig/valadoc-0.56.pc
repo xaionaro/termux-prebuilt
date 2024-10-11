@@ -1,0 +1,17 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+pkgdatadir=${datarootdir}/valadoc-0.56
+pkglibdir=/data/data/com.termux/files/usr/lib/valadoc-0.56
+vapidir=${datarootdir}/vala/vapi
+
+Name: Valadoc
+Description: The Vala documentation compiler library
+Version: 0.56.17
+Requires: gobject-2.0 libgvc libvala-0.56
+Requires.private: gmodule-2.0
+Libs: -L${libdir} -lvaladoc-0.56
+Cflags: -I${includedir}/valadoc-0.56

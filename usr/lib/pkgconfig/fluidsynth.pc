@@ -1,0 +1,12 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name: FluidSynth
+Description: Software SoundFont synth
+Version: 2.3.6
+Requires.private: glib-2.0 gthread-2.0 sndfile libpulse-simple dbus-1 readline
+Libs: -L${libdir} -lfluidsynth
+Libs.private:  /data/data/com.termux/files/usr/lib/libpulse-simple.so /data/data/com.termux/files/usr/lib/libpulse.so /home/builder/.termux-build/_cache/android-r27-api-24-v1/lib/clang/18/lib/linux/aarch64/libomp.so
+Cflags: -I${includedir}

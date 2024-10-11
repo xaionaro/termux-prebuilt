@@ -1,0 +1,10 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name: liba52
+Description: A decoding library for ATSC A/52 streams.
+Version: 0.8.0
+Libs: -L${libdir} -la52
+Cflags: -I${includedir}/a52dec

@@ -1,0 +1,10 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name: OpenCL
+Description: Open Computing Language generic Installable Client Driver Loader
+Requires: OpenCL-Headers
+Version: 3.0
+Libs: -L${libdir} -lOpenCL

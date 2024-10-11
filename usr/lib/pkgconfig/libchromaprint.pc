@@ -1,0 +1,12 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=/data/data/com.termux/files/usr
+libdir=/data/data/com.termux/files/usr/lib
+includedir=/data/data/com.termux/files/usr/include
+
+Name: chromaprint
+Description: Audio fingerprint library
+URL: http://acoustid.org/chromaprint
+Version: 1.5.1
+Libs: -L/data/data/com.termux/files/usr/lib -lchromaprint
+Cflags: -I/data/data/com.termux/files/usr/include
+

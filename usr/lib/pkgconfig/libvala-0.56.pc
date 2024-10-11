@@ -1,0 +1,22 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+bindir=${exec_prefix}/bin
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+pkgdatadir=${datarootdir}/vala-0.56
+pkglibdir=/data/data/com.termux/files/usr/lib/vala-0.56
+vapidir=${datarootdir}/vala-0.56/vapi
+
+vapigen=${exec_prefix}/bin/vapigen-0.56
+gen_introspect=/data/data/com.termux/files/usr/lib/vala-0.56/gen-introspect-0.56
+vala_gen_introspect=${exec_prefix}/bin/vala-gen-introspect-0.56
+
+Name: Vala
+Description: The Vala compiler library
+Version: 0.56.17
+Requires: glib-2.0 gobject-2.0
+Requires.private: gmodule-2.0
+Libs: -L${libdir} -lvala-0.56
+Cflags: -I${includedir}/vala-0.56

@@ -1,0 +1,10 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name:        libebml
+Description: Library for parsing EBML data structures
+Version:     1.4.5
+Libs:        -L${libdir} -lebml
+Cflags:      -I${includedir}  

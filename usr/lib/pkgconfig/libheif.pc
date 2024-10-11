@@ -1,0 +1,14 @@
+prefix=/data/data/com.termux/files/usr
+exec_prefix=${prefix}
+libdir=/data/data/com.termux/files/usr/lib
+includedir=${prefix}/include
+
+Name: libheif
+Description: HEIF image codec.
+URL: https://github.com/strukturag/libheif
+Version: 1.18.2
+Requires:
+Requires.private: libde265 x265 aom
+Libs: -L${libdir} -lheif
+Libs.private: -lc++
+Cflags: -I${includedir}
